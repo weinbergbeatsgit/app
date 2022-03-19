@@ -34,13 +34,13 @@ const Variant = props => {
             <span className='flex-column gap-10'>
                 <div onClick={() => addVariant()} className="flex-column gap-10 align-center">
                   
-                    <img src={'/icons/'+ props.variant.image} class="variant-icon" alt={props.variant.size}/>
-                    <div key={props.variant + "preis"} className='flex-row gap-5'>
-                        <b>Preis</b>
+                    <img src={process.env.PUBLIC_URL + '/icons/'+ props.variant.image} class="variant-icon" alt={props.variant.size}/>
+                    <div key={props.variant + "preis"}>
                         <label>{formatPrice(props.variant.price)} €</label>
                     </div>
                 </div>
                 <div key={props.variant + "buttons"} className="flex-row justify-center">
+
                     <button className="p-button p-component minus" onClick={() => rmVariant()}>
                         <img src={minus} alt="-"/>
                     </button>

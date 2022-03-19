@@ -82,7 +82,7 @@ function App() {
           <SchoppingCart schoppingCart={produkte} />
         </div>
         <div className="flex-column justify-space-between flex-grow">
-          <div className="flex-column gap-10 main-content">
+          <div className="flex-column gap-10 main-content flex-grow">
             <div className="flex-row gap-30 flex-wrap">
               {produkte.map((thisProduct, index) => {
                 if (category === "All" || category === thisProduct.category || thisProduct.category === "All") {
