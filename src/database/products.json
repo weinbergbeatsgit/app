@@ -1,0 +1,155 @@
+[
+    {
+        "name": "Eventwein",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Glas",
+                "category": "Wine",
+                "image": "Weinglas_weiss.png",
+                "price": 3.5
+            },
+            {
+                "size": "Flasche",
+                "image": "Weinflasche_weiss.png",
+                "price": 11.5
+            }
+        ]
+    },
+    {
+        "name": "Weißwein",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Glas",
+                "category": "Wine",
+                "image": "Weinglas_weiss.png",
+                "price": 3.5
+            },
+            {
+                "size": "Flasche",
+                "image": "Weinflasche_weiss.png",
+                "price": 11.5
+            }
+        ]
+    },
+    {
+        "name": "Rotwein",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Glas",
+                "image": "Rotweinglas_weiss.png",
+                "price": 3.5
+            },
+            {
+                "size": "Flasche",
+                "image": "Rotweinflasche_weiss.png",
+                "price": 11.5
+            }
+        ]
+    },
+    {
+        "name": "Sekt",
+        "category":"Welcome",
+        "variants": [
+            {
+                "size": "Glas",
+                "image": "Sektglas_weiss.png",
+                "price": 4
+            },
+            {
+                "size": "Flasche",
+                "image": "Sektflasche_weiss.png",
+                "price": 13
+            }
+        ]
+    },
+    {
+        "name": "Softdrink",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Glas",
+                "image": "Flasche_weiss.png",
+                "price": 3
+            }
+        ]
+    },
+    {
+        "name": "Wasser",
+        "category":"All",
+        "variants": [
+            {
+                "size": "Klein",
+                "image": "Flasche_weiss.png",
+                "price": 1.5
+            },
+            {
+                "size": "Groß",
+                "image": "Weinflasche_weiss.png",
+                "price": 3.5
+            }
+        ]
+    },
+    {
+        "name": "Traubensaft",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Klein",
+                "image": "glas_weiss.png",
+                "price": 2.5
+            }
+        ]
+    },
+    {
+        "name": "Glas",
+        "category":"All",
+        "variants": [
+            {
+                "size": "Leer",
+                "image": "Weinglas_leer_weiss.png",
+                "price": 3
+            },
+            {
+                "size": "Willkommensgetränk",
+                "image": "Weinglas_weiss.png",
+                "price": 5
+            }
+        ]
+    },
+    {
+        "name": "Hugo",
+        "category":"Welcome",
+        "variants": [
+            {
+                "size": "Glas",
+                "image": "Weinglas_weiss.png",
+                "price": 4.5
+            }
+        ]
+    },
+    {
+        "name": "Aperol",
+        "category":"Welcome",
+        "variants": [
+            {
+                "size": "Glas",
+                "image": "Weinglas_weiss.png",
+                "price": 5
+            }
+        ]
+    },
+    {
+        "name": "Pfand",
+        "category":"All",
+        "variants": [
+            {
+                "size": "Pfand",
+                "image": "pfand.png",
+                "price": -2
+            }
+        ]
+    }
+]
