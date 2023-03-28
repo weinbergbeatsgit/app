@@ -119,7 +119,7 @@
         "variants": [
             {
                 "size": "Pfand",
-                "image": "pfand.png",
+                "image": "pfand_add.png",
                 "price": 2.00
             },
             {
