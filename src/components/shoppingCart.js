@@ -1,11 +1,12 @@
 import CartItem from "./cartItem"
 
-const SchoppingCart = ({schoppingCart}) => {
+
+const SchoppingCart = props => {
     return (
         <div className="warenkorb-content">
            <h4>Bestellung</h4>
            <div className="flex-column gap-10 margin-left-10">
-            {schoppingCart.map((thisCart, index) => {
+            {props.schoppingCart.map((thisCart, index) => {
                 return (
                     thisCart.variants.map((thisItem, index) => {
                         if( !isNaN(thisItem.anzahl)){
@@ -17,6 +18,10 @@ const SchoppingCart = ({schoppingCart}) => {
                 )
                 )
             })}
+            {props.pfand.anzahl > 0 &&
+            <CartItem cartItem={props.pfand} productName= {props.pfand.name} />
+            }
+
             </div>
       </div>
     )

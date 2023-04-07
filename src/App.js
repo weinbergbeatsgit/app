@@ -4,12 +4,15 @@ import React, { useState } from 'react';
 import ProductJson from './database/products.json';
 import SchoppingCart from './components/shoppingCart';
 import cloneDeep from 'lodash/cloneDeep';
+import {useEffect} from 'react';
+
 
 function App() {
 
 
   const [produkte, setProdukte] = useState(cloneDeep(ProductJson));
   const [result, setResult] = useState([]);
+  const [appPfand, setAppPfand] = useState([]);
   const [category, setCategory] = useState("All");
 
   const calResult = (productList) => {
@@ -21,18 +24,25 @@ function App() {
         }
       })
     })
+    if(!isNaN(appPfand.anzahl)) {
+        i += appPfand.anzahl*appPfand.price;
+    }
     setResult(i);
   }
 
-  const initPage = () => {
-    setProdukte(cloneDeep(ProductJson));
+  const initPage = async event => {
     setAll();
-    calResult(produkte);
+    reset();
   }
 
   const reset = () => {
     resetProducts();
     calResult(ProductJson);
+    resetPfand();
+  }
+
+  const resetPfand = () => {
+        setAppPfand(produkte[produkte.length -1])
   }
 
   const resetProducts = () => {
@@ -53,9 +63,10 @@ function App() {
     setCategory("Wine");
   }
 
-  const handleChanges = (product, index) => {
+  const handleChanges = (product, index, pfand) => {
     produkte[index] = product;
     calResult(produkte);
+    setAppPfand(pfand);
   }
 
   const formatPrice = (price) => {
@@ -79,7 +90,7 @@ function App() {
 
       <div className="flex-row flex-grow">
         <div className="warenkorb">
-          <SchoppingCart schoppingCart={produkte} />
+          <SchoppingCart schoppingCart={produkte} pfand={appPfand}/>
         </div>
         <div className="flex-column justify-space-between flex-grow">
           <div className="flex-column gap-10 main-content flex-grow">
@@ -87,7 +98,7 @@ function App() {
               {produkte.map((thisProduct, index) => {
                 if (category === "All" || category === thisProduct.category || thisProduct.category === "All") {
                   return (
-                    <Product product={thisProduct} childToParent={handleChanges} />
+                    <Product product={thisProduct} pfand={appPfand} childToParent={handleChanges} />
                   )
                 }
               })

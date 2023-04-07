@@ -5,12 +5,14 @@
         "variants": [
             {
                 "size": "Glas",
+                "pfand": "0",
                 "category": "Wine",
                 "image": "Weinglas_weiss.png",
                 "price": 5.00
             },
             {
                 "size": "Flasche",
+                "pfand": "1",
                 "image": "Weinflasche_weiss.png",
                 "price": 15.00
             }
@@ -22,11 +24,13 @@
         "variants": [
             {
                 "size": "Glas",
+                "pfand": "0",
                 "image": "Sektglas_weiss.png",
                 "price": 5.50
             },
             {
                 "size": "Flasche",
+                "pfand": "1",
                 "image": "Sektflasche_weiss.png",
                 "price": 16.00
             }
@@ -38,6 +42,7 @@
         "variants": [
             {
                 "size": "Glas",
+                "pfand": "1",
                 "image": "Flasche_weiss.png",
                 "price": 3.50
             }
@@ -49,11 +54,13 @@
         "variants": [
             {
                 "size": "Klein",
+                "pfand": "1",
                 "image": "Flasche_weiss.png",
                 "price": 2.50
             },
             {
                 "size": "Groß",
+                "pfand": "1",
                 "image": "Weinflasche_weiss.png",
                 "price": 5.00
             }
@@ -65,6 +72,7 @@
         "variants": [
             {
                 "size": "Klein",
+                "pfand": "1",
                 "image": "glas_weiss.png",
                 "price": 3.5
             }
@@ -76,11 +84,13 @@
         "variants": [
             {
                 "size": "Leer",
+                "pfand": "0",
                 "image": "Weinglas_leer_weiss.png",
                 "price": 4
             },
             {
                 "size": "Willkommensgetränk",
+                "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 5
             }
@@ -92,11 +102,13 @@
         "variants": [
             {
                 "size": "Hugo",
+                "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 6.5
             },
             {
                 "size": "Aperol",
+                "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 6.5
             }
@@ -108,6 +120,7 @@
         "variants": [
             {
                 "size": "Glas",
+                "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 5.50
             }
@@ -115,15 +128,11 @@
     },
     {
         "name": "Pfand",
+        "price": 2.00,
         "category":"All",
         "variants": [
             {
-                "size": "Pfand",
-                "image": "pfand_add.png",
-                "price": 2.00
-            },
-            {
-                "size": "Pfand zurück",
+                "size": "zurück",
                 "image": "pfand.png",
                 "price": -2.00
             }

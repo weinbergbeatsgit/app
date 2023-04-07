@@ -3,9 +3,9 @@ import Variant from './productVariant';
 
 const Product = props => {
 
-  const childToParent = (variant, index) => {
+  const childToParent = (variant, index, pfand) => {
     props.product.variants[index] = variant;
-    props.childToParent(props.product, props.index);
+    props.childToParent(props.product, props.index, props.pfand);
   }
 
 
@@ -15,7 +15,7 @@ const Product = props => {
       <div key={props.product.name + "Variants"} className="flex-row gap-10">
         {
           props.product.variants.map((thisVariant, index) =>
-            <Variant variant={thisVariant} index={index} childToParent={childToParent} />
+            <Variant variant={thisVariant} index={index} pfand={props.pfand} childToParent={childToParent}/>
           )
         }
       </div>

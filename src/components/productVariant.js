@@ -16,7 +16,10 @@ const Variant = props => {
             props.variant.anzahl = 0;
         }
         props.variant.anzahl++;
-        props.childToParent(props.variant, props.index)
+        if(props.variant.pfand == 1) {
+            addPfand();
+        }
+        props.childToParent(props.variant, props.index, props.pfand)
     }
 
     const rmVariant = () => {
@@ -25,7 +28,26 @@ const Variant = props => {
         } else {
             props.variant.anzahl -= 1;
         }
+        if(props.variant.pfand == 1) {
+            rmPfand();
+        }
         props.childToParent(props.variant, props.index)
+    }
+
+    const addPfand = () => {
+        if (isNaN(props.pfand.anzahl)) {
+            props.pfand.anzahl = 0;
+        }
+
+        props.pfand.anzahl++;
+    }
+
+    const rmPfand = () => {
+        if (isNaN(props.pfand.anzahl) || props.pfand.anzahl <= 1) {
+            props.pfand.anzahl = NaN;
+        } else {
+            props.pfand.anzahl -= 1;
+        }
     }
 
 

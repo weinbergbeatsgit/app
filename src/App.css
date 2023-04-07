@@ -144,7 +144,7 @@ li{
 }
 
 .warenkorb-content{
-  font-size:0.95em;
+  font-size:15px;
   width: 220px;
 }  
 
@@ -172,7 +172,7 @@ li{
 }
 
 .variant{
-  width: 110px;
+  width: 80px;
   padding: 2.5vh 1vh;
   background-color: #3f4b5b;
   border-radius: 4px;
