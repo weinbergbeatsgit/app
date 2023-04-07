@@ -5,6 +5,9 @@ Background 20262e
 
 */
 
+body {
+font-size: 14px;
+}
 
 .text-overflow-ellipsis{
   overflow: hidden;
@@ -144,8 +147,7 @@ li{
 }
 
 .warenkorb-content{
-  font-size:15px;
-  width: 220px;
+  width: 250px;
 }  
 
 

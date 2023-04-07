@@ -97,17 +97,11 @@
         ]
     },
     {
-        "name": "Cocktail",
+        "name": "Aperol / Hugo",
         "category":"Welcome",
         "variants": [
             {
                 "size": "Hugo",
-                "pfand": "0",
-                "image": "Weinglas_weiss.png",
-                "price": 6.5
-            },
-            {
-                "size": "Aperol",
                 "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 6.5

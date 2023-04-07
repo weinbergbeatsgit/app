@@ -11,8 +11,13 @@ function App() {
 
 
   const [produkte, setProdukte] = useState(cloneDeep(ProductJson));
-  const [result, setResult] = useState([]);
-  const [appPfand, setAppPfand] = useState([]);
+  const [result, setResult] = useState(0);
+  const [appPfand, setAppPfand] = useState({
+                                                   "name": "Pfand",
+                                                   "price": 2.00,
+                                                   "category":"All",
+                                                   "variants": []
+                                               });
   const [category, setCategory] = useState("All");
 
   const calResult = (productList) => {
@@ -37,12 +42,13 @@ function App() {
 
   const reset = () => {
     resetProducts();
+     resetPfand();
     calResult(ProductJson);
-    resetPfand();
   }
 
   const resetPfand = () => {
         setAppPfand(produkte[produkte.length -1])
+        appPfand.anzahl = 0;
   }
 
   const resetProducts = () => {
@@ -65,8 +71,8 @@ function App() {
 
   const handleChanges = (product, index, pfand) => {
     produkte[index] = product;
+     setAppPfand(pfand);
     calResult(produkte);
-    setAppPfand(pfand);
   }
 
   const formatPrice = (price) => {
