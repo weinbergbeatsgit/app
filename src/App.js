@@ -18,6 +18,12 @@ function App() {
                                                    "category":"All",
                                                    "variants": []
                                                });
+  const [appErgebnis, setAppErgebnis] = useState({
+                                                  "name": "Gesamt",
+                                                  "price": 0.00,
+                                                  "category":"All",
+                                                  "variants": []
+                                              });
   const [category, setCategory] = useState("All");
 
   const calResult = (productList) => {
@@ -33,6 +39,7 @@ function App() {
         i += appPfand.anzahl*appPfand.price;
     }
     setResult(i);
+    appErgebnis.price=i;
   }
 
   const initPage = async event => {
@@ -96,7 +103,7 @@ function App() {
 
       <div className="flex-row flex-grow">
         <div className="warenkorb">
-          <SchoppingCart schoppingCart={produkte} pfand={appPfand}/>
+          <SchoppingCart schoppingCart={produkte} pfand={appPfand} ergebnis={appErgebnis}/>
         </div>
         <div className="flex-column justify-space-between flex-grow">
           <div className="flex-column gap-10 main-content flex-grow">

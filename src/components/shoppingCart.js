@@ -1,4 +1,5 @@
 import CartItem from "./cartItem"
+import ErgenisItem from "./ergebnisItem"
 
 
 const SchoppingCart = props => {
@@ -21,7 +22,8 @@ const SchoppingCart = props => {
             {props.pfand.anzahl > 0 &&
             <CartItem cartItem={props.pfand} productName= {props.pfand.name} />
             }
-
+            <hr className="width-100"/>
+            <ErgenisItem ergebnisItem={props.ergebnis} productName= {props.ergebnis.name} />
             </div>
       </div>
     )
