@@ -90,19 +90,19 @@
         "variants": [
             {
                 "size": "Einzeln",
-                "pfand": "1",
+                "pfand": "0",
                 "image": "glas_weiss.png",
                 "price": 2
             },
             {
                 "size": "Tablett",
-                "pfand": "1",
+                "pfand": "0",
                 "image": "Glaeser.png",
                 "price": 10
             },
             {
                 "size": "Flasche",
-                "pfand": "1",
+                "pfand": "0",
                 "image": "Weinflasche_weiss.png",
                 "price": 30.00
             }
