@@ -107,7 +107,7 @@ function App() {
         </div>
         <div className="flex-column justify-space-between flex-grow">
           <div className="flex-column gap-10 main-content flex-grow">
-            <div className="flex-row gap-30 flex-wrap">
+            <div className="flex-row flex-wrap">
               {produkte.map((thisProduct, index) => {
                 if (category === "All" || category === thisProduct.category || thisProduct.category === "All") {
                   return (

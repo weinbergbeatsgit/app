@@ -6,7 +6,7 @@ const SchoppingCart = props => {
     return (
         <div className="warenkorb-content">
            <h4>Bestellung</h4>
-           <div className="flex-column gap-10 margin-left-10">
+           <div className="flex-column margin-left-10">
             {props.schoppingCart.map((thisCart, index) => {
                 return (
                     thisCart.variants.map((thisItem, index) => {

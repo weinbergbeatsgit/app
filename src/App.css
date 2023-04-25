@@ -73,24 +73,28 @@ h4{
   flex-wrap: wrap;
 }
 
-.gap-5{
-  gap:0.5 vh;
+.margin-top-5 {
+    margin-top: 5px;
 }
 
-.gap-10{
-  gap:1vh;
+.gap-5  > div + div{
+  margin-left:0.5 vh;
 }
 
-.gap-20{
-  gap:2vh;
+.gap-10 > div + div{
+  margin-left: 1vh;
 }
 
-.gap-30{
-  gap:3vh;
+.gap-20 > div + div{
+  margin-left: 2vh;
 }
 
-.gap-40{
-  gap:4vh;
+.gap-30 > div + div{
+  margin-left:3vh;
+}
+
+.gap-40 > div + div{
+  margin-left:4vh;
 }
 
 .height-100{
@@ -167,6 +171,8 @@ li{
   border-radius: 4px;
   padding: 10px 15px;
   background-color: #2a323d;
+  margin-top: 3vh;
+  margin-right:3vh;
 }
 
 .productName{
