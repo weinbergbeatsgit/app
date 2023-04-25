@@ -180,8 +180,8 @@ li{
 }
 
 .variant{
-  width: 80px;
-  padding: 2.5vh 1vh;
+  width: 100px;
+  padding: 2.5vh 1.5vh;
   background-color: #3f4b5b;
   border-radius: 4px;
   cursor: pointer;
@@ -192,7 +192,8 @@ li{
 }
 
 .variant-icon{
-  height:6vh;
+  height:8vh;
+  margin: 20px;
 }
 
 .minus{

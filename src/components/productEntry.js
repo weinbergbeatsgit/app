@@ -11,7 +11,7 @@ const Product = props => {
 
   return (
     <div key={props.product.name} className='flex-column margin-bottom-25 product-entry-panel align-center'>
-      <h3 className='productName'>{props.product.name}</h3>
+      <h2 className='productName'>{props.product.name}</h2>
       <div key={props.product.name + "Variants"} className="flex-row gap-10">
         {
           props.product.variants.map((thisVariant, index) =>

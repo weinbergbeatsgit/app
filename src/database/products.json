@@ -37,7 +37,7 @@
         ]
     },
     {
-        "name": "Softdrink",
+        "name": "Softdrink / Traubensaft",
         "category":"All",
         "variants": [
             {
@@ -67,18 +67,6 @@
         ]
     },
     {
-        "name": "Traubensaft",
-        "category":"Wine",
-        "variants": [
-            {
-                "size": "Klein",
-                "pfand": "1",
-                "image": "glas_weiss.png",
-                "price": 3.5
-            }
-        ]
-    },
-    {
         "name": "Glas",
         "category":"All",
         "variants": [
@@ -93,6 +81,30 @@
                 "pfand": "0",
                 "image": "Weinglas_weiss.png",
                 "price": 5
+            }
+        ]
+    },
+    {
+        "name": "Rheinknie",
+        "category":"Wine",
+        "variants": [
+            {
+                "size": "Einzeln",
+                "pfand": "1",
+                "image": "glas_weiss.png",
+                "price": 2
+            },
+            {
+                "size": "Tablett",
+                "pfand": "1",
+                "image": "Glaeser.png",
+                "price": 10
+            },
+            {
+                "size": "Flasche",
+                "pfand": "1",
+                "image": "Weinflasche_weiss.png",
+                "price": 30.00
             }
         ]
     },
