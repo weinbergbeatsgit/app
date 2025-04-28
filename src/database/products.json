@@ -8,13 +8,13 @@
                 "pfand": "0",
                 "category": "Wine",
                 "image": "Weinglas_weiss.png",
-                "price": 5.00
+                "price": 6.00
             },
             {
                 "size": "Flasche",
                 "pfand": "1",
                 "image": "Weinflasche_weiss.png",
-                "price": 15.00
+                "price": 18.00
             }
         ]
     },
@@ -32,7 +32,7 @@
                 "size": "Flasche",
                 "pfand": "1",
                 "image": "Sektflasche_weiss.png",
-                "price": 16.00
+                "price": 18.00
             }
         ]
     },
@@ -75,12 +75,6 @@
                 "pfand": "0",
                 "image": "Weinglas_leer_weiss.png",
                 "price": 4
-            },
-            {
-                "size": "Willkommensgetränk",
-                "pfand": "0",
-                "image": "Weinglas_weiss.png",
-                "price": 5
             }
         ]
     },
